@@ -29,6 +29,8 @@ $(function(){
 			},
 			error: function(data){
 				$('#test').click();
+				$('#username').val('');
+				$('#password').val('');
 			}
 		});
 	});	

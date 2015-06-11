@@ -46,7 +46,7 @@ session_start();
 							data:$('#reg_frm').serializeArray(),
 							type:'post',
 							success: function(data){
-								alert(data);
+								  alert(data);
 							      $('#name').val('');
 							      $('#email').val('');
 							      $('#phone').val('');
@@ -74,6 +74,8 @@ session_start();
 		</script>
 	</head>
 <body>
+<button class="btn btn-primary" type="submit" id="test" name="test" data-toggle="modal" data-target="#myModal" style="display: none"></button>
+
 <form id="reg_frm" class="form-horizontal" method="post">
 	<div class="form-group">
 		<label for="name" class="col-md-2 control-label">Name:</label>
